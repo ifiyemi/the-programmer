@@ -1,0 +1,29 @@
+{% extends 'UserRegistration/base.html' %}
+{% block content %}
+<p>HERE YOU CAN VIEW ALL REGISTERED USERS</p>
+
+
+<table style="width:100%">
+  <tr>
+    <th><h1>NAMES</h1></th>
+    <th><h1>EMAIL</h1></th>
+
+  </tr>
+
+    <tr>
+
+    <td>
+        {%for names in all_names%}
+<div style="color: green">{{names}}</div>
+{%endfor%}
+    </td>
+
+    <td>
+        {%for email in all_emails%}
+<div style="color: green">{{email}}</div>
+{%endfor%}
+    </td>
+  </tr>
+    </table>
+
+    {% endblock %}

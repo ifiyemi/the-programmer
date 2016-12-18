@@ -1,0 +1,13 @@
+{% extends 'UserRegistration/base.html' %}
+{% block content %}
+<p>You are welcome to the registration page</p>
+<div>Please click the corresponding link to either register or view list of registered users</div>
+<ul>
+    <li><a href="{% url 'lists'%}"> View the list of all registered users</a></li>
+    <li><a href="{% url 'create'%}" class="top-menu"> Click here to register</a></li><span class="glyphicon glyphicon-plus"></span>
+
+    <button type="button" class="btn btn-primary btn-xs">
+Extra small Primary button
+</button>
+</ul>
+{% endblock %}
